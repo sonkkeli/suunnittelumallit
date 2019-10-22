@@ -16,6 +16,9 @@ public class FactoryMethod {
         System.out.println("");
         AterioivaOtus siivooja = new Siivooja();
         siivooja.aterioi();
+        System.out.println("");
+        AterioivaOtus teekkari = new Teekkari();
+        teekkari.aterioi();
     }
     
 }
