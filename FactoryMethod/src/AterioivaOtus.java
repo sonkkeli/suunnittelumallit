@@ -1,5 +1,3 @@
-package factorymethod;
-
 public abstract class AterioivaOtus {
 
     Juoma juoma = null;
