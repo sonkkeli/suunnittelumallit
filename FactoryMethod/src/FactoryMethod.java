@@ -19,6 +19,5 @@ public class FactoryMethod {
         System.out.println("");
         AterioivaOtus teekkari = new Teekkari();
         teekkari.aterioi();
-    }
-    
+    }    
 }
