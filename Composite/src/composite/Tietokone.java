@@ -6,7 +6,7 @@ import java.util.ArrayList;
  *
  * @author sonja
  */
-public class Tietokone {
+public class Tietokone implements Laiteosa {
     private ArrayList<Laiteosa> osat;
 
     public Tietokone() {
@@ -19,12 +19,12 @@ public class Tietokone {
         this.osat.add(new Verkkokortti());
     }
     
-    public void laskeHinta() {
+    public int getHinta() {
         int summa = 0;
         for (Laiteosa l : osat){
             summa += l.getHinta();
         }
-        System.out.println(summa);
+        return summa;
     }
     
 }

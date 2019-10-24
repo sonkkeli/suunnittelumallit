@@ -11,6 +11,6 @@ public class Composite {
      */
     public static void main(String[] args) {
         Tietokone k = new Tietokone();
-        k.laskeHinta();
+        System.out.println(k.getHinta());
     }    
 }
