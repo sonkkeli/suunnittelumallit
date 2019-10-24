@@ -4,7 +4,7 @@ package abstractfactory;
  *
  * @author sonja
  */
-public class Henkilo extends Boss {
+public class Henkilo extends Adidas {
     private String nimi;
 
     public Henkilo(String nimi) {
