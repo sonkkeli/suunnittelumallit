@@ -1,18 +1,29 @@
 package composite;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author sonja
  */
 public class Kotelo implements Laiteosa {
-    private int hinta;
+    private ArrayList<Laiteosa> osat;
 
     public Kotelo() {
-        this.hinta = 50;
+        this.osat = new ArrayList<>();
+        osat.add(new Kiintolevypaikka());
+        osat.add(new Kiintolevypaikka());
+        osat.add(new Virtalahde());
+        osat.add(new Tuuletin());
+        osat.add(new Tuuletin());
     }
 
     @Override
     public int getHinta() {
-        return hinta;
+        int sum = 0;
+        for (Laiteosa l : osat){
+            sum += l.getHinta();
+        }
+        return sum;
     }
 }

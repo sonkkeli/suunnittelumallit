@@ -11,9 +11,6 @@ public class Tietokone {
 
     public Tietokone() {
         this.osat = new ArrayList<>();
-    }
-    
-    public void alustaKokoonpano() {
         this.osat.add(new Emolevy());
         this.osat.add(new Naytonohjain());
         this.osat.add(new Kotelo());

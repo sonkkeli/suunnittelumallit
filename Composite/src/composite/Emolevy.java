@@ -1,18 +1,28 @@
 package composite;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author sonja
  */
 public class Emolevy implements Laiteosa {
-    private int hinta;
+    private ArrayList<Laiteosa> osat;
 
     public Emolevy() {
-        this.hinta = 250;
+        this.osat = new ArrayList<>();
+        osat.add(new Piirisarja());
+        osat.add(new Prosessorikanta());
+        osat.add(new BIOS());
+        osat.add(new Valimuisti());
     }
 
     @Override
     public int getHinta() {
-        return hinta;
+        int sum = 0;
+        for (Laiteosa l : osat){
+            sum += l.getHinta();
+        }
+        return sum;
     }
 }
