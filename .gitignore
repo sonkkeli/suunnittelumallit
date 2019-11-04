@@ -1,11 +1,7 @@
 build
-/FactoryMethod/nbproject/private/
-/AbstractFactory/nbproject/private/
-/Composite/nbproject/private/
-/Observer/nbproject/private/
-/Singleton/nbproject/private/
 /t3_Composite/nbproject/private/
 /t4_Observer/nbproject/private/
 /t2_AbstractFactory/nbproject/private/
 /t5_Singleton/nbproject/private/
 /t1_FactoryMethod/nbproject/private/
+/t6_Decorator/nbproject/private/
