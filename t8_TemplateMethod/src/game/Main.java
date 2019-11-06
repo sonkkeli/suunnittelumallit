@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         Game a = new ArvaaLuku();
-        a.playOneGame(2);
+        a.playOneGame(1);
         
     }
     
