@@ -18,7 +18,5 @@ public class Main {
         // TODO code application logic here
         Game a = new ArvaaLuku();
         a.playOneGame(1);
-        
     }
-    
 }
