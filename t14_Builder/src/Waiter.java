@@ -10,14 +10,14 @@ public class Waiter {
         builder = b;
     }
 
-    public Burger getBurger() {
+    public Object getBurger() {
         return builder.getBurger();
     }
 
     public void constructBurger() {
         builder.createNewBurger();
-        builder.buildLeipa();
+        builder.buildTyyppi();        
         builder.buildPihvi();
-        builder.buildTyyppi();
+        builder.buildLeipa();
     }
 }

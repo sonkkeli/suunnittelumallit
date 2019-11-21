@@ -4,18 +4,31 @@
  * @author sonja
  */
 public class NaughtyBurger extends BurgerBuilder {
+    
+    private StringBuilder burger;
+	
+    @Override
+    public StringBuilder getBurger(){
+        return burger;
+    }
+    
+    @Override
+    public void createNewBurger() {
+        burger = new StringBuilder();
+    }
+    
     @Override
     public void buildTyyppi() {
-        burger.setTyyppi("Naughty burger");
+        burger.append("Naughty burger: ");
     }
 
     @Override
     public void buildPihvi() {
-        burger.setPihvi("Suomalainen 100% rotukarjan pihvi");
+        burger.append("Suomalainen 100% rotukarjan pihvi, ");
     }
 
     @Override
     public void buildLeipa() {
-        burger.setLeipa("Gluteeniton vegaaninen sämpylä");
+        burger.append("Gluteeniton vegaaninen sämpylä");
     }
 }
